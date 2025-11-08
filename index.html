@@ -68,12 +68,43 @@
 .story h2 { font-size: 30px; margin-bottom: 15px; }
 .story p { font-size: 18px; line-height: 1.6; }
 footer { background: #333; color: #fff; text-align: center; padding: 25px 10px; margin-top: 40px; font-size: 14px; }
+.logo-img { height: 80px; width: auto; }
+header .whatsapp-btn { margin-left: auto; }
+@media (max-width: 600px) {
+  header { flex-direction: column; text-align: center; }
+  .logo-img { height: 55px; }
+  .hero img, .hero-img { max-width: 100%; height: auto; }
+  header .top-whatsapp { margin: 10px auto 0 auto; }
+}
+  .floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+}
+.floating-whatsapp img {
+  width: 34px;
+  height: 34px;
+}
+.top-whatsapp { margin-left: auto; margin-right: 0; }
 </style>
 </head>
 <body>
-  <header class="hero">
-  <img src="Newlogowithname.png" alt="FarmDada Banner" class="hero-img" />
-  <a href="https://wa.me/7372016516" class="whatsapp-btn">Buy Now on WhatsApp</a>
+  <header>
+  <img src="Newlogowithname.png" alt="FarmDada Logo" class="logo-img" />
+  <a href="https://wa.me/7372016516" class="whatsapp-btn top-whatsapp">Buy Now on WhatsApp</a>
 </header>
 
   <div class="hero">
@@ -105,6 +136,6 @@ footer { background: #333; color: #fff; text-align: center; padding: 25px 10px; 
   <p>Call / WhatsApp: +91-7372016516 • Email: Farmdadaa@gmail.com</p>
   <p>© 2025 FarmDada Ventures. All Rights Reserved.</p>
 </footer>
+<a href="https://wa.me/7372016516" class="floating-whatsapp" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
 </body>
 </html>
-
