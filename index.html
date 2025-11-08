@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+if (location.host === 'farmdada.com') {
+location.href = 'https://www.farmdada.com' + location.pathname + location.search + location.hash;
+}
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FarmDada Ventures</title>
@@ -139,3 +144,4 @@ header .whatsapp-btn { margin-left: auto; }
 <a href="https://wa.me/7372016516" class="floating-whatsapp" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
 </body>
 </html>
+
